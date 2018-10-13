@@ -1,0 +1,69 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	background-color: #EEEEEE;
+}
+
+header {
+	background-color: #65698E;
+	height: auto;
+	min-height: 50px;
+	vertical-align: middle;
+	overflow: auto;
+}
+header ul {
+  	margin-left: 15px !important;
+}
+header ul a {
+	color: #FFFFFF !important;
+	text-decoration: none;
+	font-size: 14px;
+}
+header ul a hover {
+  	color: #FFFFFF !important;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+h2 {
+  	font-size: 26px;
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: bold;
+	padding-top: 15px;
+}
+
+footer {
+	background-color: #65698E;
+	color: #FFFFFF;
+	height: 70px;
+}
+footer div {
+	line-height: 70px;
+	vertical-align: middle;
+}
+
+hr {
+	border-top: 1px solid #252525;
+	border-radius: 50%;
+}
+
+#home, #team {
+	color: #000000;
+	background-color: #EEEEEE;
+}
+#about, #contact {
+	color: #FFFFFF;
+	background-color: #555555;
+}
+#about p {
+  	padding-left: 15px;
+}
+#about div, #contact div {
+  	padding: 15px;
+}
