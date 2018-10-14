@@ -18,4 +18,10 @@ class mainController extends Controller
     public function loadContact() {
         return view('contact');
     }
+    public function loadRegister() {
+        return view('register');
+    }
+    public function loadLogin() {
+        return view('login');
+    }
 }

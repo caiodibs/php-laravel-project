@@ -1,6 +1,7 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
+	color: #000000;
 	background-color: #EEEEEE;
 }
 
@@ -53,14 +54,14 @@ hr {
 	border-radius: 50%;
 }
 
-#home, #team {
+/*#home, #team, #register, #login, #about, #contact {
 	color: #000000;
 	background-color: #EEEEEE;
 }
-#about, #contact {
+#home, #team, #register, #login, #about, #contact {
 	color: #FFFFFF;
 	background-color: #555555;
-}
+}*/
 #about p {
   	padding-left: 15px;
 }

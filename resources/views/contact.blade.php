@@ -2,7 +2,6 @@
 
 @section('contact')
 <section id="contact" class="container-fluid">
-    <hr>
     <h3 class="text-center">Contato</h3>
     <div class="row">
         <div class="col-12 col-md-3">

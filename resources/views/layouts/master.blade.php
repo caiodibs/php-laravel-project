@@ -22,7 +22,7 @@
 	<nav class="navbar navbar-expand-lg navbar-light">
 		<a class="navbar-brand" href="#">
 		<img
-			src="img/logo.png"
+			src="{{ asset('img/logo.png') }}"
 			height="50"
 			alt="Logo CS Photos">
 		</a>
@@ -32,12 +32,20 @@
 	
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
-			<li class="nav-item" role="presentation"><a href="#home" class="nav-link">Home</a></li>
-			<li class="nav-item" role="presentation"><a href="#about" class="nav-link">Sobre a empresa</a></li>
-			<li class="nav-item" role="presentation"><a href="#team" class="nav-link">Equipa</a></li>
-			<li class="nav-item" role="presentation"><a href="#contact" class="nav-link">Contato</a></li>
-			<li class="nav-item" role="presentation"><a href="#register" class="nav-link">Registar</a></li>
-			<li class="nav-item" role="presentation"><a href="#login" class="nav-link">Entrar</a></li>
+			<li class="nav-item" role="presentation"><a href="{{ route('index') }}" class="nav-link">Home</a></li>
+			<li class="nav-item" role="presentation"><a href="{{ route('about') }}" class="nav-link">Sobre a empresa</a></li>
+			<li class="nav-item" role="presentation"><a href="{{ route('team') }}" class="nav-link">Equipa</a></li>
+			<li class="nav-item" role="presentation"><a href="{{ route('contact') }}" class="nav-link">Contato</a></li>
+			@guest
+				<li class="nav-item" role="presentation"><a href="{{ route('register') }}" class="nav-link">Registar</a></li>
+				<li class="nav-item" role="presentation"><a href="{{ route('login') }}" class="nav-link">{{ __('Entrar') }}</a></li>
+			@else
+			<li class="nav-item" role="presentation"><a href="{{ route('logout') }}" class="nav-link" onclick="event.preventDefault();
+				document.getElementById('logout-form').submit();">{{ __('Sair') }}</a></li>
+				<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+					@csrf
+				</form>
+			@endguest
 		</ul>
 		</div>
 	</nav>
@@ -54,6 +62,12 @@
 	
     <!-- Contact section -->
     @yield("contact")
+
+	<!-- Register section -->
+    @yield("register")
+
+	<!-- Login section -->
+    @yield("login")
 </main>
 <!-- Footer area -->
 <footer class="container-fluid">

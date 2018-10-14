@@ -15,7 +15,6 @@
                 aria-label="Logótipo da CS Photo">
         </div>
     </div>
-    <hr>
 </section>
 
 @endsection

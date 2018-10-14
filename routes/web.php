@@ -16,6 +16,8 @@ Route::get('/about', 'mainController@loadAbout')->name('about');
 Route::get('/team', 'mainController@loadTeam')->name('team');
 Route::get('/contact', 'mainController@loadContact')->name('contact');
 
-/*Auth::routes();
+Route::get('/auth/register', 'mainController@loadRegister')->name('register');
+Route::get('/auth/login', 'mainController@loadLogin')->name('login');
 
-Route::get('/home', 'HomeController@index')->name('home');*/
+Auth::routes();
+//Route::get('/home', 'HomeController@index')->name('home');
