@@ -30,3 +30,7 @@
 * . Foram criados dois campos adicionais na tabela users, is_admin para saber se o registante é administrador, e is_team_member, para saber se a pessoa e membro da equipa. Isso foi feito pelo Laravel com as componentes de migração
 * . Para facilitar, foi incluída uma checkbox "Administrador" no registo
 * . A equipa já contem meus dados independentemente de haverem registos na base de dados
+* . Inserção do nome do utilizador no menu principal, junto a opção de sair
+* . Adicionada página de adição de membros a equipa
+* . Criado um Service Provider para permitir apenas administradores em certas partes do site
+* . Correcções no formulário para adicionar membros a equipa

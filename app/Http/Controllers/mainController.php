@@ -24,4 +24,7 @@ class mainController extends Controller
     public function loadLogin() {
         return view('login');
     }
+    public function loadMembers() {
+        return view('members');
+    }
 }

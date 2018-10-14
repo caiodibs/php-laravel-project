@@ -30,9 +30,11 @@
             <div class="col-12 col-md-8">
                 <p>Template.</p>
             </div>
+        @isAdmin
         <div class="col-12 text-center">
-            <button class="btn btn-secondary btn-lg">tem talento e deseja fazer parte da equipa, registe-se aqui!</button>
+            <a class="btn btn-secondary btn-lg" href="{{ route('members') }}"></>Adicionar membro a equipa</a>
         </div>
+        @endisAdmin
     </div>
 </section>
 @endsection
