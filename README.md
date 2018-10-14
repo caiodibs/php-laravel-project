@@ -34,3 +34,4 @@
 * . Adicionada página de adição de membros a equipa
 * . Criado um Service Provider para permitir apenas administradores em certas partes do site
 * . Correcções no formulário para adicionar membros a equipa
+* . Algumas limpezas de código e adição de comentários

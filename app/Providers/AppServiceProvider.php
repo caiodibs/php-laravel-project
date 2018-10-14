@@ -15,7 +15,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // Define @isAdmin
+        // Define @isAdmin for ease of use
         blade::if('isAdmin',function (){
             if (Auth::check())
                 return Auth::user()->is_admin === 1 ? true : false;
