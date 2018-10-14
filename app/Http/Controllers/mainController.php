@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 
 // Main controller for redirecting pages
 class mainController extends Controller
@@ -14,7 +15,8 @@ class mainController extends Controller
         return view('about');
     }
     public function loadTeam() {
-        return view('team');
+        $users = User::all();
+        return view('team', compact('users'));
     }
     public function loadContact() {
         return view('contact');

@@ -20,4 +20,3 @@ Route::get('/auth/register', 'mainController@loadRegister')->name('register');
 Route::get('/auth/login', 'mainController@loadLogin')->name('login');
 Route::get('/members', 'mainController@loadMembers')->name('members');
 Auth::routes();
-//Route::get('/home', 'HomeController@index')->name('home');

@@ -23,6 +23,8 @@ class CreateUsersTable extends Migration
             $table->timestamps();
             $table->boolean("is_admin")->default(false);
             $table->boolean("is_team_member")->default(false);
+            $table->string('description')->nulable();
+            $table->binary('photo')->nulable();
         });
     }
 

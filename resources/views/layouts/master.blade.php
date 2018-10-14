@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt" >
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
 	<meta charset="UTF-8">
@@ -40,9 +40,6 @@
 				<li class="nav-item" role="presentation"><a href="{{ route('register') }}" class="nav-link">Registar</a></li>
 				<li class="nav-item" role="presentation"><a href="{{ route('login') }}" class="nav-link">{{ __('Entrar') }}</a></li>
 			@else
-				@isAdmin
-					<li class="nav-item" role="presentation"><a href="{{ route('members') }}" class="nav-link">{{ __('Adicionar membros') }}</a></li>
-				@endisAdmin
 			<li class="nav-item" role="presentation"><a href="{{ route('logout') }}" class="nav-link" onclick="event.preventDefault();
 				document.getElementById('logout-form').submit();">{{ Auth::user()->name}} || Sair</a></li>
 				<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

@@ -69,6 +69,8 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
             'is_admin' => isset($data['is_admin'])? true: false,
             'is_team_member' => isset($data['is_team_member'])? true: false,
+            'description' => isset($data['description'])? $data['description'] : "",
+            'photo' => isset($data['photo'])? $data['photo']: "",
         ]);
     }
 }

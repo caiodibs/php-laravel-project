@@ -35,3 +35,5 @@
 * . Criado um Service Provider para permitir apenas administradores em certas partes do site
 * . Correcções no formulário para adicionar membros a equipa
 * . Algumas limpezas de código e adição de comentários
+* . Criados campos de descrição e imagem
+* . Adicionada área onde os administradores podem registar membros na equipa
