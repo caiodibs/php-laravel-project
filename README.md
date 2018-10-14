@@ -26,3 +26,7 @@
 * . Criação dos blades, sendo o master layout e a divisão daquele template HTML em blades correspondentes
 * . Criação das rotas e controladores para o carregamento das páginas
 * . Limpeza do lixo que eventualmente tenha ficado do modelo anterior
+* - Ações de registo e login
+* . Foram criados dois campos adicionais na tabela users, is_admin para saber se o registante é administrador, e is_team_member, para saber se a pessoa e membro da equipa. Isso foi feito pelo Laravel com as componentes de migração
+* . Para facilitar, foi incluída uma checkbox "Administrador" no registo
+* . A equipa já contem meus dados independentemente de haverem registos na base de dados
