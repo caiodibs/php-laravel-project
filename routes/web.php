@@ -18,5 +18,6 @@ Route::get('/contact', 'mainController@loadContact')->name('contact');
 
 Route::get('/auth/register', 'mainController@loadRegister')->name('register');
 Route::get('/auth/login', 'mainController@loadLogin')->name('login');
-Route::get('/members', 'mainController@loadMembers')->name('members');
+Route::get('/members/{id}', 'mainController@loadMembers')->name('members');
+Route::post('/insert/{id}', 'insertController@addMember')->name('addMembers');
 Auth::routes();

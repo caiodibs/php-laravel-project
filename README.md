@@ -8,6 +8,7 @@
 * 3. Bootstrap 4.0 e dependências como jQuery 3.3.1 e popper 1.14.3
 
 ### Backend
+* 2. Apache 2.4.34
 * 1. PHP 7.2.10
 * 2. MariaDB 10.3
 * 3. Composer 1.7.2
@@ -16,7 +17,7 @@
 
 ### Database
 * . DB criado com o nome de laravel
-* . Utilizador e senha default: user: root, senha:
+* . Alterar as configurações de utilizador e palavra-passe no ficheiro .env
 
 ## Passos seguidos
 * . Criação do HTML que servirá de template
@@ -37,3 +38,6 @@
 * . Algumas limpezas de código e adição de comentários
 * . Criados campos de descrição e imagem
 * . Adicionada área onde os administradores podem registar membros na equipa
+* . Inserção de membros na equipa e upload de imagens
+* . Alteração do upload para acrescer o id ao nome da imagem, para evitar duplicidade
+* . Link simbólico para poder aceder aos arquivos anexados

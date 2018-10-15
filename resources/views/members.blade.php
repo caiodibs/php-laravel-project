@@ -10,10 +10,10 @@
                             <div class="card-header">{{ __('Adicionar membros') }}</div>
 
                             <div class="card-body">
-                                <form method="POST"
-                                    action="{{ route('register') }}">
-                                    <imput id="id" name="id" value="1"/>
-                                    <imput id="is_team_member" name="is_team_member" value="1"/>
+                                <form method="post"
+                                    action="{{ route('addMembers',$user->id) }}"
+                                    enctype="multipart/form-data">
+                                    @csrf
 
                                     <div class="form-group row">
                                         <label for="name"
@@ -26,7 +26,7 @@
                                                 type="text"
                                                 class="form-control"
                                                 name="name"
-                                                value="{{ old('name') }}" disabled>
+                                                value="{{$user->name}}" disabled>
                                         </div>
                                     </div>
 
@@ -38,8 +38,9 @@
 
                                         <div class="col-md-6">
                                             <input type="file"
-                                                id="photo" name="photo"
-                                                accept="image/png, image/jpeg" required />
+                                                name="photo"
+                                                accept="image/png, image/jpeg"
+                                                required />
                                         </div>
                                     </div>
 

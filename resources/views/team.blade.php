@@ -23,8 +23,8 @@
             <div class="col-12 col-md-3 text-center">
                 <figure>
                     <img class="img-fluid"
-                        src="img/default-avatar.png"
-                        alt="template">
+                        src="storage/member/{{$user->photo}}"
+                        alt="{{$user->name}}">
                     <figcaption>
                         {{$user->name}}
                     </figcaption>
@@ -36,32 +36,31 @@
         @endif
         @endforeach
         <!-- team members for admin approval area -->
-        <hr>
-        <div class="col-12 text-center text-danger">
+        @isAdmin
+        @if (count($users) > 0)
+        <hr/>
+        <div class="col-12 text-center text-danger bg-warning">
             <h3>Área de aprovação do administrador</h3>
         </div>
-        @isAdmin
+        <hr/>
         @foreach($users as $user)
+        @if ($user->is_team_member === 0)
             <div class="col-12 col-md-3 text-center">
                 <figure>
                     <img class="img-fluid"
                         src="img/default-avatar.png"
-                        alt="template">
+                        alt="{{$user->name}}">
                     <figcaption>
                         {{$user->name}}
                     </figcaption>
                 </figure>
             </div>
-            @if ($user->is_team_member === 0)
             <div class="col-12 col-md-8">
                 <a class="btn btn-secondary btn-lg" href="{{ route('members',$user->id) }}"></>Adicionar membro a equipa</a>
             </div>
-            @else
-            <div class="col-12 col-md-8">
-                <p>{{$user->description}}</p>
-            </div>
             @endif
         @endforeach
+        @endif
         @endisAdmin
     </div>
 </section>

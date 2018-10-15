@@ -27,7 +27,12 @@ class mainController extends Controller
     public function loadLogin() {
         return view('login');
     }
-    public function loadMembers() {
-        return view('members');
+    public function loadMembers($id) {
+        if (isset($id)) {
+            $user = User::find($id);
+            return view('members', compact('user'));
+        }else {
+            return view('index');
+        }
     }
 }
