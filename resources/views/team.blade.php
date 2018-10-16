@@ -31,7 +31,7 @@
                 </figure>
             </div>
             <div class="col-12 col-md-8">
-                <p>{{$user->description}}</p>
+                <p>{!! nl2br($user->description) !!}</p>
             </div>
         @endif
         @endforeach
@@ -45,7 +45,7 @@
         <hr/>
         @foreach($users as $user)
         @if ($user->is_team_member === 0)
-            <div class="col-12 col-md-3 text-center">
+            <div class="col-12 col-md-3 text-center m-3">
                 <figure>
                     <img class="img-fluid"
                         src="img/default-avatar.png"
@@ -56,7 +56,7 @@
                 </figure>
             </div>
             <div class="col-12 col-md-8">
-                <a class="btn btn-secondary btn-lg" href="{{ route('members',$user->id) }}"></>Adicionar membro a equipa</a>
+                <a class="btn btn-secondary btn-lg m-3" href="{{ route('members',$user->id) }}"></>Adicionar membro a equipa</a>
             </div>
             @endif
         @endforeach

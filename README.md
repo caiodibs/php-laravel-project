@@ -16,28 +16,32 @@
 * 5. PHP MyAdmin 4.8
 
 ### Database
-* . DB criado com o nome de laravel
-* . Alterar as configurações de utilizador e palavra-passe no ficheiro .env
+* DB criado com o nome de laravel
+* Alterar as configurações de utilizador e palavra-passe no ficheiro .env
+
+## Comandos executados
 
 ## Passos seguidos
-* . Criação do HTML que servirá de template
-* . Instalação do backend, composer e laravel
-* . Configuração do laravel e ajustes de ficheiros
-* . configuração do .env com os dados para conexão, criação da tabela de registos e login
-* . Criação dos blades, sendo o master layout e a divisão daquele template HTML em blades correspondentes
-* . Criação das rotas e controladores para o carregamento das páginas
-* . Limpeza do lixo que eventualmente tenha ficado do modelo anterior
-* - Ações de registo e login
-* . Foram criados dois campos adicionais na tabela users, is_admin para saber se o registante é administrador, e is_team_member, para saber se a pessoa e membro da equipa. Isso foi feito pelo Laravel com as componentes de migração
-* . Para facilitar, foi incluída uma checkbox "Administrador" no registo
-* . A equipa já contem meus dados independentemente de haverem registos na base de dados
-* . Inserção do nome do utilizador no menu principal, junto a opção de sair
-* . Adicionada página de adição de membros a equipa
-* . Criado um Service Provider para permitir apenas administradores em certas partes do site
-* . Correcções no formulário para adicionar membros a equipa
-* . Algumas limpezas de código e adição de comentários
-* . Criados campos de descrição e imagem
-* . Adicionada área onde os administradores podem registar membros na equipa
-* . Inserção de membros na equipa e upload de imagens
-* . Alteração do upload para acrescer o id ao nome da imagem, para evitar duplicidade
-* . Link simbólico para poder aceder aos arquivos anexados
+* Criação do HTML que servirá de template
+* Instalação do backend, composer e laravel
+* Configuração do laravel e ajustes de ficheiros
+* configuração do .env com os dados para conexão, criação da tabela de registos e login
+* Criação dos blades, sendo o master layout e a divisão daquele template HTML em blades correspondentes
+* Criação das rotas e controladores para o carregamento das páginas
+* Limpeza do lixo que eventualmente tenha ficado do modelo anterior
+* Ações de registo e login
+* Foram criados dois campos adicionais na tabela users, is_admin para saber se o registante é administrador, e is_team_member, para saber se a pessoa e membro da equipa. Isso foi feito pelo Laravel com as componentes de migração
+* Para facilitar, foi incluída uma checkbox "Administrador" no registo
+* A equipa já contem meus dados independentemente de haverem registos na base de dados
+* Inserção do nome do utilizador no menu principal, junto a opção de sair
+* Adicionada página de adição de membros a equipa
+* Criado um Service Provider para permitir apenas administradores em certas partes do site
+* Correcções no formulário para adicionar membros a equipa
+* Algumas limpezas de código e adição de comentários
+* Criados campos de descrição e imagem
+* Adicionada área onde os administradores podem registar membros na equipa
+* Inserção de membros na equipa e upload de imagens
+* Alteração do upload para acrescer o id ao nome da imagem, para evitar duplicidade
+* Link simbólico para poder aceder aos arquivos anexados
+* Limpeza e comentário de código
+* Ajustes tipográficos

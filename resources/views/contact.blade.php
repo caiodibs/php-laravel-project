@@ -2,7 +2,7 @@
 
 @section('contact')
 <section id="contact" class="container-fluid">
-    <h3 class="text-center">Contato</h3>
+    <h3 class="text-center">Contacto</h3>
     <div class="row">
         <div class="col-12 col-md-3">
             <h3 class="text-center">Morada:</h3>

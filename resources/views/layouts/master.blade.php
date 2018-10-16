@@ -35,7 +35,7 @@
 			<li class="nav-item" role="presentation"><a href="{{ route('index') }}" class="nav-link">Home</a></li>
 			<li class="nav-item" role="presentation"><a href="{{ route('about') }}" class="nav-link">Sobre a empresa</a></li>
 			<li class="nav-item" role="presentation"><a href="{{ route('team') }}" class="nav-link">Equipa</a></li>
-			<li class="nav-item" role="presentation"><a href="{{ route('contact') }}" class="nav-link">Contato</a></li>
+			<li class="nav-item" role="presentation"><a href="{{ route('contact') }}" class="nav-link">Contacto</a></li>
 			@guest
 				<li class="nav-item" role="presentation"><a href="{{ route('register') }}" class="nav-link">Registar</a></li>
 				<li class="nav-item" role="presentation"><a href="{{ route('login') }}" class="nav-link">{{ __('Entrar') }}</a></li>
