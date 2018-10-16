@@ -7,17 +7,17 @@ O tema e o contacto são fictícios, e todas as fotos foram tiradas por mim, sen
 ## Ferramentas usadas para o projeto
 
 ### Frontend
-* 1. HTML5 (tags e WAI-ARIA)
-* 2. CSS
-* 3. Bootstrap 4.0 e dependências como jQuery 3.3.1 e popper 1.14.3
+* HTML5 (tags e WAI-ARIA)
+* CSS
+* Bootstrap 4.0 e dependências como jQuery 3.3.1 e popper 1.14.3
 
 ### Backend
-* 2. Apache 2.4.34
-* 1. PHP 7.2.10
-* 2. MariaDB 10.3
-* 3. Composer 1.7.2
-* 4. Laravel 5.7
-* 5. PHP MyAdmin 4.8
+* Apache 2.4.34
+* PHP 7.2.10
+* MariaDB 10.3
+* Composer 1.7.2
+* Laravel 5.7
+* PHP MyAdmin 4.8
 
 ### Database
 * DB criado com o nome de laravel
@@ -25,7 +25,7 @@ O tema e o contacto são fictícios, e todas as fotos foram tiradas por mim, sen
 
 ## Como executar
 
-### Ao fazer o guit clone, executar os seguintes passos
+### Ao fazer o git clone, executar os seguintes passos
 #### Os ficheiros e comandos estarão entre aspas " para facilitar a visualização
 * Vá até a pasta onde o projeto foi clonado. linha de comando, ou terminal caso prefira usar um ambiente de programação e se o mesmo oferecer um terminal
 * Executar "composer install"
