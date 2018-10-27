@@ -1,15 +1,15 @@
-# PHP Laravel project
+﻿# PHP Laravel project
 
-Trata-se de um projeto desenvolvido em Laravel com a finalidade de criar um site da empresa, com registo, login e possibilidade de adicionar membros a equipa.
-Na secção equipa, meu nome, foto e descrição sempre constarão, independente de haverem dados na base de dados
-O tema e o contacto são fictícios, e todas as fotos foram tiradas por mim, sendo assim, livre de direitos de autor
+Added from my bitbucket repository
 
-## Ferramentas usadas para o projeto
+Laravel project site that simulates a company site and allows the administrators to add team members. The photos were made by me and are free from author rights.
+
+## Tools used
 
 ### Frontend
 * HTML5 (tags e WAI-ARIA)
 * CSS
-* Bootstrap 4.0 e dependências como jQuery 3.3.1 e popper 1.14.3
+* Bootstrap 4.0 and dependencies such as jQuery 3.3.1 e popper 1.14.3
 
 ### Backend
 * Apache 2.4.34
@@ -20,66 +20,30 @@ O tema e o contacto são fictícios, e todas as fotos foram tiradas por mim, sen
 * PHP MyAdmin 4.8
 
 ### Database
-* DB criado com o nome de laravel
-* Alterar as configurações de utilizador e palavra-passe no ficheiro .env
+* MariaDB
 
-## Como executar
+## How to install
 
-### Ao fazer o git clone, executar os seguintes passos
-#### Os ficheiros e comandos estarão entre aspas " para facilitar a visualização
-* Vá até a pasta onde o projeto foi clonado. linha de comando, ou terminal caso prefira usar um ambiente de programação e se o mesmo oferecer um terminal
-* Executar "composer install"
-* De seguida, renomear o ficheiro ".env.example" para ".env"
-* Altere no ficheiro ".env" as configurações para apontar para a base de dados a ser utilizada. Como exemplo, este projeto utiliza a base de dados com o nome de laravel
-* Ainda no ficheiro ".env", defina o utilizador e senha a serem usados
-* De volta ao terminal, execute os seguintes
-* Executar "php artisan key:generate"
-* Executar "php artisan migrate". Caso a base for apenas para testes, e não se importar com a perda dos registos nela contidos, pode executar "php artisan migrate:fresh"
-* Executar "php artisan storage:link" para permitir que as imagens carregadas pelos utilizadores possam ser vistas dentro do projeto
-* Rodar o servidor. Duas opções:
-Opção 1
-* Executar "php artisan serve"
-* Aceder pelo browser a página "localhost:8000"
-Opção 2
-* Redirecionar o diretório do apache no httpd.conf para onde o projeto foi clonado "local do projeto/public"
-* Aceder ao "localhost"
+### After git clone, follow the steps:
+#### The files and commands are between quotes " to help the guide
+* Go to the cloned folder and open a terminal
+* Run "composer install"
+* Rename the file ".env.example" to ".env"
+* Change the database configurations on the".env"
+* Go back to terminal and run the following commands
+* Run "php artisan key:generate"
+* Run "php artisan migrate" or "php artisan migrate:fresh" whether you don't mind loosing the data
+* Run "php artisan storage:link" to allow access uploaded images
+* Two options to run the server:
+Option 1
+* Run "php artisan serve"
+* Access via browser "localhost:8000"
+Option 2
+* Redirect apache's directory  'httpd.conf' to "project location/public"
+* Access via browser "localhost"
 
 ## Conteúdo do projeto
 
-* Site com as páginas Home, Sobre a empresa, Equipa, Contacto, Registo e Login
-* Caso o utilizador registe-se como administrador, ele poderá adicionar membros na secção Equipa
-* Logo abaixo de todos os membros da equipa, e caso o utilizador seja administrador, ele verá uma parte de Área de aprovação do administrador com todos os utilizadores registados. Ele pode adicionar qualquer membro desta lista
-* Ao adicionar membro, ele será redirecionado ao formulário onde deverá anexar uma foto do utilizador e escrever uma descrição sobre ele.
-* Ao adicionar, ele será redirecionado a página da equipa com o membro adicionado já na parte superior, e esta alteração poderá ser vista por todos utilizadores, registados ou não
-
-## Passos seguidos ao criar o projeto
-* Criação do HTML que servirá de template
-* Instalação do backend, composer e laravel
-* Configuração do laravel e ajustes de ficheiros
-* configuração do .env com os dados para conexão, criação da tabela de registos e login
-* Criação dos blades, sendo o master layout e a divisão daquele template HTML em blades correspondentes
-* Criação das rotas e controladores para o carregamento das páginas
-* Limpeza do lixo que eventualmente tenha ficado do modelo anterior
-* Ações de registo e login
-* Foram criados dois campos adicionais na tabela users, is_admin para saber se o registante é administrador, e is_team_member, para saber se a pessoa e membro da equipa. Isso foi feito pelo Laravel com as componentes de migração
-* Para facilitar, foi incluída uma checkbox "Administrador" no registo
-* A equipa já contem meus dados independentemente de haverem registos na base de dados
-* Inserção do nome do utilizador no menu principal, junto a opção de sair
-* Adicionada página de adição de membros a equipa
-* Criado um Service Provider para permitir apenas administradores em certas partes do site
-* Correcções no formulário para adicionar membros a equipa
-* Algumas limpezas de código e adição de comentários
-* Criados campos de descrição e imagem
-* Adicionada área onde os administradores podem registar membros na equipa
-* Inserção de membros na equipa e upload de imagens
-* Alteração do upload para acrescer o id ao nome da imagem, para evitar duplicidade
-* Link simbólico para poder aceder aos arquivos anexados
-* Limpeza e comentário de código
-* Ajustes tipográficos
-* Finalização da descrição do projeto
-
-## Implementações futuras
-* Criar um campo para ordenação manual dos membros da equipa, onde os administradores possam escolher a ordem em que os membros aparecem
-* A foto e descrição poderá ser incluída pelo próprio utilizador ao se registar, ficando passível de moderação por parte da administração
-* Adicionar painel de controlo para o utilizador realizar alterações nos seus dados
-* Permitir que mais fotos sejam adicionadas na secção Sobre a empresa
+* Company home page with login and register pages
+* Registered users that signs as administrator may add new members to the team section
+* On the team members section, in case of an administrator, the user will see all registered members and may add anyone to the team. If the user chooses to add a team member, the user will be presented by a form to add a photo and a brief description. After addition, the recent added user will be moved to the upper list and will be visible for everyone as a team member
